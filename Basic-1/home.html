@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Henry Ngo-Sytchev" />
+    <meta name="description" content="Full-Stack Web Development course at CodeFactory starts its first Code Review challenge for its students." />
+    <!-- ANIMATE -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- SWIPER CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <!-- MY CSS -->
+    <link rel="stylesheet" type="text/css" href="css/cr_1.css" />
+    <title>FSWD_Code Review 1</title>
+</head>
+
+<body>
+    <!-- overall container-->
+    <div id="container">
+        <!-- the header-->
+        <header class="animate__animated animate__backInDown">
+            <img id="logo_top" src="img/logo.png" alt="CodeFactory Logo" />
+            <p id="top_name">Henry Ngo-Sytchev - Full-Stack Web Developer</p>
+        </header>
+
+        <!-- navigation bar-->
+        <nav class="animate__animated animate__bounceInLeft animate__delay-1s">
+            <ul>
+                <li>
+                    <a href="home.html" alt="home page">Home </a>
+                </li>
+                <li>
+                    <a href="blog.html" alt="blog page">Blog</a>
+                </li>
+                <li>
+                    <a href="aboutme.html" alt="about me page">About me</a>
+                </li>
+                <li>
+                    <a href="contact.html" alt="contact page">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- main content-->
+        <main class="animate__animated animate__fadeInRight animate__delay-2s">
+            <!-- SWIPER ANIMATION -->
+            <!-- Slider main container -->
+            <div class="swiper" style="border: red 4 px dashed">
+                <!-- Additional required wrapper -->
+                <div id="slides" class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="img/swiper_1.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="img/swiper_2.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="img/swiper_3.jpg" alt=""></div>
+                </div>
+                <!-- If we need pagination -->
+                <!-- <div class="swiper-pagination"></div> -->
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev" style="color: rgb(202, 187, 183); background: rgb(198, 82, 82);"></div>
+                <div class="swiper-button-next" style="color: rgb(202, 187, 183); background: rgb(198, 82, 82);"></div>
+
+                <!-- If we need scrollbar
+                <div class="swiper-scrollbar"></div> -->
+            </div>
+
+            <!-- block_1 -->
+            <!-- <div class="content">
+                <div>
+                    <h1>
+                        This is my first <br /> website :D
+                    </h1>
+                </div>
+            </div> -->
+
+            <!-- block_2 -->
+            <div class="content" id="block_img">
+                <div class="animate__animated animate__headShake animate__delay-5s">
+                    <img class="img" src="img/Phone.png" alt="smartphone" />
+                </div>
+                <div>
+                    <h3>
+                        Samsung Galaxy S11/S20 Plus video leaks showing phone in real life!
+                    </h3>
+                </div>
+            </div>
+
+            <!-- block_3 -->
+            <div class="content">
+                <!-- Block_3-1-->
+                <div id="block_3-1" class="small_block">
+                    <div class="animate__animated animate__pulse animate__delay-5s">
+                        <img src="img\Debit_card_ATM.jpg" alt="debit_card" />
+                    </div>
+                    <div>
+                        <h3>
+                            Police are investigating three ATM explosions in two Florida counties
+                        </h3>
+                    </div>
+                </div>
+
+                <!-- Block_3-2-->
+                <div id="block_3-2" class="small_block">
+                    <div class="animate__animated animate__pulse animate__delay-5s">
+                        <img src="img/Taxify-Scooters.jpg" alt="scooter" />
+                    </div>
+                    <div>
+                        <h3>E-scooter firm Bolt pulls out of 12 cities</h3>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- footer-->
+        <footer class="animate__animated animate__backInUp animate__delay-3s">
+            <center>
+                <figure>
+                    <img id="logo_bottom" src="img/logo.png" alt="CodeFactory Logo" />
+                    <figcaption>Henry Ngo-Sytchev - CodeFactory 2020</figcaption>
+                </figure>
+            </center>
+        </footer>
+    </div>
+
+
+    <!-- SWIPER SCRIPT -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        });
+    </script>
+
+</body>
+
+</html>

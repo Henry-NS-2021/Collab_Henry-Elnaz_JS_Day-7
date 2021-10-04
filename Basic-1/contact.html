@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Henry Ngo-Sytchev" />
+    <meta name="description" content="Full-Stack Web Development course at CodeFactory starts its first Code Review challenge for its students." />
+    <title>Contact</title>
+    <!-- ANIMATE -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- MY CSS -->
+    <link rel="stylesheet" type="text/css" href="css/cr_1.css" />
+</head>
+
+<body>
+    <!-- overall container-->
+    <div>
+        <!-- the header-->
+        <header>
+            <img id="logo_top" src="img/logo.png" alt="CodeFactory Logo" />
+            <p id="top_name">Henry Ngo-Sytchev - Full-Stack Web Developer</p>
+        </header>
+
+        <!-- navigation bar-->
+        <nav>
+            <ul>
+                <li>
+                    <a href="home.html" alt="home page">Home </a>
+                </li>
+                <li>
+                    <a href="blog.html" alt="blog page">Blog</a>
+                </li>
+                <li>
+                    <a href="aboutme.html" alt="about me page">About me</a>
+                </li>
+                <li>
+                    <a href="contact.html" alt="contact page">Contact </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- main content-->
+        <main class="contact">
+            <div id="container">
+                <br />
+                <h1 class="animate__animated animate__zoomInUp">Contact form</h1>
+                <hr />
+                <form>
+                    <div>
+                        Firstname <br /><input class="animate__animated animate__flash animate__delay-1s" type="text" placeholder="Your Firstname" />
+                        <br /> Lastname <br />
+                        <input class="animate__animated animate__flash animate__delay-1s" type="text" placeholder="Your Lastname" /> <br /> Email <br /><input class="animate__animated animate__flash animate__delay-1s" type="email" placeholder="Your Email"
+                        /> <br /> Object <br />
+                        <select class="animate__animated animate__flash animate__delay-1s">
+                <option value="empty"></option>
+                <option value="news articles">News articles</option>
+                <option value="blog">Blog</option>
+                <option value="personal information">
+                  Personal information
+                </option>
+                <option value="Other">Other</option>
+              </select>
+                    </div>
+                    <br />
+                    <textarea class="animate__animated animate__flash animate__delay-2s" name="wishes" rows="10" cols="66">
+Let your message in here... </textarea
+            >
+            <br />
+            <br />
+            <br />
+            <hr />
+            <input class="animate__animated animate__flash animate__delay-3s" id="send" type="submit" value="SEND" />
+            <br />
+            <br />
+            <br />
+          </form>
+        </div>
+      </main>
+
+      <!-- footer-->
+      <footer class="footer">
+        <center>
+          <figure>
+            <img id="logo_bottom" src="img/logo.png" alt="CodeFactory Logo" />
+            <figcaption>Henry Ngo-Sytchev - CodeFactory 2020</figcaption>
+          </figure>
+        </center>
+      </footer>
+    </div>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+    Swal.fire({
+      position: 'top-center',
+      icon: 'info',
+      title: 'Thank you! <br> <br> Your message is sent!',
+      showConfirmButton: true,
+      timer: 0   })
+
+    document.getElementById("send").addEventListener("click", fire())
+    </script>
+  </body>
+</html>
